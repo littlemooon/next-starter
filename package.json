@@ -1,0 +1,82 @@
+{
+  "name": "next-starter",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": "fredwright0@gmail.com",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "flow": "flow",
+    "flow:build": "flow-typed install --overwrite && flow",
+    "lint": "eslint . --fix"
+  },
+  "dependencies": {
+    "next": "^4.1.3",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
+  },
+  "devDependencies": {
+    "babel-plugin-flow-react-proptypes": "^7.0.0",
+    "babel-plugin-inline-dotenv": "^1.1.1",
+    "babel-plugin-transform-decorators": "^6.24.1",
+    "babel-plugin-transform-flow-strip-types": "^6.21.0",
+    "babel-plugin-transform-inline-environment-variables": "^0.2.0",
+    "enzyme": "^3.1.0",
+    "enzyme-adapter-react-16": "^1.0.2",
+    "eslint-config-littlemooon": "^1.2.0",
+    "flow-bin": "^0.57.3",
+    "flow-typed": "^2.2.1",
+    "jest": "^21.2.1",
+    "jest-enzyme": "^4.0.1",
+    "react-test-renderer": "^16.0.0"
+  },
+  "babel": {
+    "plugins": [
+      "transform-decorators",
+      "transform-flow-strip-types"
+    ],
+    "env": {
+      "development": {
+        "presets": "next/babel",
+        "plugins": [
+          "inline-dotenv"
+        ]
+      },
+      "production": {
+        "presets": "next/babel",
+        "plugins": [
+          "transform-inline-environment-variables"
+        ]
+      },
+      "test": {
+        "presets": [
+          [
+            "env",
+            {
+              "modules": "commonjs"
+            }
+          ],
+          "next/babel"
+        ]
+      }
+    }
+  },
+  "eslintConfig": {
+    "extends": "littlemooon"
+  },
+  "eslintIgnore": [
+    "node_modules",
+    ".env",
+    ".next",
+    "flow-typed"
+  ],
+  "jest": {
+    "setupFiles": [
+      "<rootDir>/test-setup.js"
+    ],
+    "setupTestFrameworkScriptFile": "./node_modules/jest-enzyme/lib/index.js"
+  }
+}

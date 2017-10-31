@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`With Snapshot Testing Index renders 1`] = `
+<div
+  className="jsx-2738761292"
+>
+  <div
+    className="jsx-2738761292"
+  >
+    <h1
+      className="jsx-1117296120"
+    >
+      HOME
+    </h1>
+    <div
+      className="jsx-3581857328"
+    >
+      <ul
+        className="jsx-1117296120"
+      >
+        <li
+          className="jsx-1117296120"
+        >
+          <a
+            className="jsx-1117296120"
+            href="/"
+            onClick={[Function]}
+          >
+            home
+          </a>
+        </li>
+        <li
+          className="jsx-1117296120"
+        >
+          <a
+            className="jsx-1117296120"
+            href="/about"
+            onClick={[Function]}
+          >
+            about
+          </a>
+        </li>
+      </ul>
+    </div>
+    <p
+      className="jsx-1117296120"
+    >
+      currently on: /
+    </p>
+  </div>
+  <p>
+    oh g'mornin
+  </p>
+</div>
+`;
