@@ -1,7 +1,9 @@
 
 # next-starter
 
-Starter structure with full development setup - including linting, testing and type checking
+Starter structure with full development setup - including linting, testing and type checking.
+
+Some configuration is customised to my liking as this starter project is in active use by myself.
 
 ### scripts
 
@@ -28,3 +30,5 @@ npm run flow:build
 - enzyme
 - flow
 - dotenv
+- eslint
+- prettier
