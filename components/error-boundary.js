@@ -25,11 +25,15 @@ export default class ErrorBoundary extends React.Component<Props, State> {
   render() {
     return (
       <Flex>
-        {this.state.hasError ? (
-          <h1>{`Something went wrong :'(`}</h1>
-        ) : (
-          this.props.children
+        {this.state.hasError && (
+          <h3 key="error">{`Error caught in React component!`}</h3>
         )}
+        {this.props.children}
+        <style jsx>{`
+          h3 {
+            color: orangered;
+          }
+        `}</style>
       </Flex>
     )
   }

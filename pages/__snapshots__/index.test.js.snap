@@ -4,11 +4,11 @@ exports[`With Snapshot Testing Index renders 1`] = `
 <div
   className="jsx-2738761292"
 >
-  <div
-    className="jsx-2738761292"
+  <header
+    className="jsx-3825839400"
   >
     <h1
-      className="jsx-1117296120"
+      className="jsx-3825839400"
     >
       HOME
     </h1>
@@ -16,13 +16,13 @@ exports[`With Snapshot Testing Index renders 1`] = `
       className="jsx-3581857328"
     >
       <ul
-        className="jsx-1117296120"
+        className="jsx-3825839400"
       >
         <li
-          className="jsx-1117296120"
+          className="jsx-3825839400"
         >
           <a
-            className="jsx-1117296120"
+            className="jsx-3825839400"
             href="/"
             onClick={[Function]}
           >
@@ -30,10 +30,10 @@ exports[`With Snapshot Testing Index renders 1`] = `
           </a>
         </li>
         <li
-          className="jsx-1117296120"
+          className="jsx-3825839400"
         >
           <a
-            className="jsx-1117296120"
+            className="jsx-3825839400"
             href="/about"
             onClick={[Function]}
           >
@@ -43,13 +43,30 @@ exports[`With Snapshot Testing Index renders 1`] = `
       </ul>
     </div>
     <p
-      className="jsx-1117296120"
+      className="jsx-3825839400"
     >
       currently on: /
     </p>
-  </div>
-  <p>
+  </header>
+  <p
+    className="jsx-3002987331"
+  >
     oh g'mornin
   </p>
+  <footer
+    className="jsx-548503616"
+  >
+    <button
+      className="jsx-548503616"
+      onClick={[Function]}
+    >
+      Trigger error
+    </button>
+    <p
+      className="jsx-548503616"
+    >
+      process.env.NAME: undefined
+    </p>
+  </footer>
 </div>
 `;

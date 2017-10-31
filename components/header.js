@@ -5,13 +5,13 @@ import Link from 'next/link'
 import Flex from './flex'
 
 type Props = {
-  title: React$Node,
+  title: React.Node,
   pathname: string,
 }
 
 export default function Header({ title, pathname }: Props) {
   return (
-    <Flex>
+    <header>
       <h1>{title}</h1>
       <Flex row>
         <ul>
@@ -29,13 +29,20 @@ export default function Header({ title, pathname }: Props) {
       </Flex>
       <p>{`currently on: ${pathname}`}</p>
       <style jsx>{`
-        ul {
-          padding: 10px;
-        }
-        li {
+        header {
+          border-bottom: 1px solid grey;
           margin-bottom: 20px;
         }
+        ul {
+          display: flex;
+          padding: 0;
+          margin: 20px 0;
+        }
+        li {
+          display: flex;
+          margin-right: 20px;
+        }
       `}</style>
-    </Flex>
+    </header>
   )
 }

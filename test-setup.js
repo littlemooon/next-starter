@@ -3,6 +3,4 @@ import Adapter from 'enzyme-adapter-react-16'
 
 Enzyme.configure({ adapter: new Adapter() })
 
-global.requestAnimationFrame = callback => {
-  setTimeout(callback, 0)
-}
+global.requestAnimationFrame = cb => setTimeout(cb, 0)

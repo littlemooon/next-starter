@@ -1,6 +1,8 @@
 
 # next-starter
 
+Starter structure with full development setup - including linting, testing and type checking
+
 ### scripts
 
 ```bash
@@ -11,6 +13,7 @@ npm run build
 npm run start
 
 npm run test
+npm run test:watch
 
 npm run flow
 npm run flow:build
@@ -18,16 +21,10 @@ npm run flow:build
 
 ### techonologies
 
-- react
+- react 16
 - nextjs
 - babel
 - jest
+- enzyme
 - flow
 - dotenv
-
-### resources
-
-- https://github.com/zeit/next.js/tree/master/examples/with-flow
-- https://github.com/zeit/next.js/tree/master/examples/with-dotenv
-- https://github.com/zeit/next.js/blob/master/examples/with-custom-babel-config
-- https://github.com/sergiodxa/react-wordpress
